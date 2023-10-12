@@ -1,0 +1,35 @@
+@import url(https://fonts.google.com/specimen/Young+Serif?preview.size=18);
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url("owl1.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family:'Young Serif';
+}
+.container {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+.titulo {
+    padding: 0;
+    margin: 0;
+    font-size: 120px;
+    text-align: left;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 2 px;
+    margin-bottom: 40px;
+    -webkit-text-stroke: 3px black;
+}
+
+
+.comentario {
+    width: 100%;
+    font-size: 150%;
+    background-color: #ffffff24;
+    padding: 20px;
+    border: 3px solid #000;
+}
