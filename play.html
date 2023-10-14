@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+<title>Minijuego de Cuadro Azul</title>
+<style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-image: url("owl1.png");
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        
+
+</style>
+</head>
+<body>
+<script>
+        let cuadroSize = 30;
+        let cuadroPos;
+        let puntosDeControl = [
+            { x: 200, y: 100, mensaje: "¡Este es el Bachiller de Ciencias!" },
+            { x: 400, y: 300, mensaje: "¡Este es el Bachiller de Informatica!" },
+            { x: 600, y: 200, mensaje: "¡Este es el Bachiller de Agropecuaria!" },
+            { x: 700, y: 500, mensaje: "¡Este es el Bachiller de Comercio!" }
+        ];
+        function setup() {
+            createCanvas(800, 600);
+            cuadroPos = createVector(50, 50);
+            
+            
+        
+
+        }
+        function draw() {
+            background(0,0);
+            
+            fill(0, 0, 255);
+            rect(cuadroPos.x, cuadroPos.y, cuadroSize, cuadroSize);
+            
+            fill(255, 0, 0);
+            for (let punto of puntosDeControl) {
+                ellipse(punto.x, punto.y, 30, 30);
+
+           
+                if (cuadroPos.x > punto.x - cuadroSize &&
+                    cuadroPos.x < punto.x + cuadroSize &&
+                    cuadroPos.y > punto.y - cuadroSize &&
+                    cuadroPos.y < punto.y + cuadroSize) {
+                    puntoAlcanzado(punto.mensaje);
+                }
+            }
+        }
+        function puntoAlcanzado(mensaje) {
+            
+            alert(mensaje);
+        }
+        function keyPressed() {
+            if (keyCode === LEFT_ARROW && cuadroPos.x > 0) {
+                cuadroPos.x -= cuadroSize;
+            } else if (keyCode === RIGHT_ARROW && cuadroPos.x < width - cuadroSize) {
+                cuadroPos.x += cuadroSize;
+            } else if (keyCode === UP_ARROW && cuadroPos.y > 0) {
+                cuadroPos.y -= cuadroSize;
+            } else if (keyCode === DOWN_ARROW && cuadroPos.y < height - cuadroSize) {
+                cuadroPos.y += cuadroSize;
+            }
+        }
+</script>
+</body>
+</html>

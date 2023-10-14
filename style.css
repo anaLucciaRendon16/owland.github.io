@@ -1,35 +1,40 @@
 @import url(https://fonts.google.com/specimen/Young+Serif?preview.size=18);
-body {
+* {
     margin: 0;
     padding: 0;
-    background-image: url("owl1.png");
-    background-size: cover;
-    background-repeat: no-repeat;
     font-family:'Young Serif';
+
 }
-.container {
-    width: 100%;
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-}
+
+
 .titulo {
-    padding: 0;
-    margin: 0;
-    font-size: 120px;
-    text-align: left;
-    color: #ffffff;
+    text-align: center;
     text-transform: uppercase;
-    letter-spacing: 2 px;
-    margin-bottom: 40px;
-    -webkit-text-stroke: 3px black;
+    text-rendering: optimizeLegibility;
+    text-decoration-color: rgb(12, 68, 117);
+
+
+    background-color: #7e7e3cbb;
+    background-repeat: no-repeat;
+    background-size:cover;
+    width: 1440px;
+    height: 500px;
+    position:sticky;
+    
+    
+}
+.inicio{
+    background-size: cover;
+    width: 1440px;
+    height: 692px;
+}
+
+.nav{
+    background-color: #7e7e3cbb;
+    text-align-last: center;
+    text-shadow: 12px;
+    font-size: 50px;
+    width: 100%;  
 }
 
 
-.comentario {
-    width: 100%;
-    font-size: 150%;
-    background-color: #ffffff24;
-    padding: 20px;
-    border: 3px solid #000;
-}

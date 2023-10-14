@@ -15,11 +15,11 @@ body {
 .titulo {
     font-size: 50px;
     text-align: center;
-    color: #fff;
+    color: #ffffff;
     text-transform: uppercase;
     letter-spacing: 4px;
     margin-bottom: 20px;
-    text-decoration: underline; /* Agregamos decoración de subrayado */
+    /*text-decoration: underline; /* Agregamos decoración de subrayado */
 }
 .juego {
     width: 100%;
@@ -29,7 +29,7 @@ body {
 }
 .comentario {
     width: 100%;
-    background-color: #fff;
+    background-color: #ffffff;
     padding: 20px;
     border: 1px solid #000;
 }
