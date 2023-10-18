@@ -12,29 +12,68 @@
     text-transform: uppercase;
     text-rendering: optimizeLegibility;
     text-decoration-color: rgb(12, 68, 117);
+    text-size-adjust: 200%;
+    background-color: #7e7e3cbb;
+    background-repeat: no-repeat;
+    background-size:cover;
+    width: 140px;
+    height: 50px;
+    position:sticky;
+}
+.inicio{
+    background-size: cover;
+    width: 1440px;
+    height: 785px;
+}
 
+.nav{
+    background-color: #225c00bb;
+    text-indent: 20px;
+    text-align:justify;
+    text-shadow: 12px;
+    font-size: 62px;
+    width: 100%;  
+}
+.play{
+    margin-right:300px;
+    text-decoration: none;
+    -webkit-text-fill-color:wheat;
+    -webkit-text-stroke-color: black;
+    -webkit-text-stroke-width: 1.5px;
 
+}
+.login{
+    text-decoration: none;
+    -webkit-text-fill-color:wheat;
+    -webkit-text-stroke-color: black;
+    -webkit-text-stroke-width: 1.5px;
+}
+.aboutus{
+    margin-right: 40px;
+    text-decoration: none;
+    -webkit-text-fill-color:wheat;
+    -webkit-text-stroke-color: black;
+    -webkit-text-stroke-width: 1.5px;
+    
+}
+.esto{
+    text-align: center;
+    text-transform: uppercase;
+    text-rendering: optimizeLegibility;
+    text-decoration-color: rgb(12, 68, 117);
+    text-size-adjust: 200%;
     background-color: #7e7e3cbb;
     background-repeat: no-repeat;
     background-size:cover;
     width: 1440px;
     height: 500px;
     position:sticky;
-    
-    
-}
-.inicio{
-    background-size: cover;
-    width: 1440px;
-    height: 692px;
 }
 
-.nav{
-    background-color: #7e7e3cbb;
-    text-align-last: center;
-    text-shadow: 12px;
-    font-size: 50px;
-    width: 100%;  
+.img1{
+text-decoration: none;
+margin-right: 20px;
+width: 150px;
+height: 50px;
+
 }
-
-
