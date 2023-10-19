@@ -8,12 +8,13 @@
 
 
 .titulo {
+    
     text-align: center;
     text-transform: uppercase;
     text-rendering: optimizeLegibility;
     text-decoration-color: rgb(12, 68, 117);
     text-size-adjust: 200%;
-    background-color: #7e7e3cbb;
+    background-color: #1916dbbb;
     background-repeat: no-repeat;
     background-size:cover;
     width: 140px;
@@ -26,8 +27,16 @@
     height: 785px;
 }
 
+.nav-container {
+    width: 100%;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
 .nav{
-    background-color: #225c00bb;
+    background-color: #6a6e0dbb;
     text-indent: 20px;
     text-align:justify;
     text-shadow: 12px;
@@ -35,7 +44,7 @@
     width: 100%;  
 }
 .play{
-    margin-right:300px;
+    margin-right:500px;
     text-decoration: none;
     -webkit-text-fill-color:wheat;
     -webkit-text-stroke-color: black;
@@ -62,7 +71,7 @@
     text-rendering: optimizeLegibility;
     text-decoration-color: rgb(12, 68, 117);
     text-size-adjust: 200%;
-    background-color: #7e7e3cbb;
+    background-color: #d11a1abb;
     background-repeat: no-repeat;
     background-size:cover;
     width: 1440px;
@@ -75,5 +84,4 @@ text-decoration: none;
 margin-right: 20px;
 width: 150px;
 height: 50px;
-
 }
