@@ -1,34 +1,95 @@
-.body{
-        background-image: url("fondo1.png");
-    }
-.nav{
-    background-color:#6a6e0dbb;
-    text-indent:20px;
-    text-align:justify;
-    text-shadow:12px;
-    font-size: 62px
-    }
-    .nav-container{
-    background-color: #6a6e0dbb;
-    width:100%;
-    position:webkit-sticky;
-    position: sticky;
-    top:0;
-    z-index:100;
-    }
-    .aboutus{
-    text-align: right;
-    position: fixed;
-    font-size:20px;
-    background-color: rgba(0, 0, 0, 0.288);
+body{
+    background-image: url("fondo1.png");
 }
-    .contacts{
-        text-align: end;
+.nav {
+    background-color: #000000e1;
+    width: 100%;
+    position:absolute;
+    top: 0;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    padding: 10px 0;
+    box-shadow: 0 7px 9px rgba(255, 255, 255, 0.1);
+    border-bottom: 1px solid rgba(0, 0, 0, 0);
+}
+
+.img1{
+    width: 60px;
+}
+
+
+.login {
+    background-color: rgba(255, 255, 255, 0.227);
+    border: 2px solid rgba(0, 0, 0, 0);
+    border-radius: 5px;
+    margin-left: 20px;
+    margin-right: 30px;
+    position: relative;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.227);
+    border: 1px solid #c0c0c0;
+    padding: 10px;
+}
+
+.login:hover .dropdown {
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.906);
+    display: block;
+}
+
+.nav a {
+    display: flex;
+    align-items: center;
+    margin: 0 1rem;
+    padding: 10px;
+    border: 2px solid transparent;
+    border-radius: 5px;
+}
+
+.nav a:hover {
+    color: #85c51f;
+
+    filter: brightness(125%);
+}
+
+
+.aboutus {
+    background-color: rgba(255, 255, 255, 0.227);
+    border: 2px solid #000;
+    margin: 0 1rem;
+}
+
+
+.texto1{
+    font-style: arial;
+    text-align: center;
+    color: whitesmoke;
+    font-size: 20px;
+    background-origin: padding-box;
+    background-color: black;
+}
+.contacts{
+        text-align: left;
+    }
+.hola{
+        margin: 20%;
+        padding-left: 30%;
+        display: flex;
+        justify-content: right; 
+        align-items: right; / 
     }
 .video{
     margin: 0;
-    padding: 0;
+    padding-top: 10%;
     display: flex;
-    justify-content: center; /* Centra horizontalmente */
-    align-items: center; /* Centra verticalmente */
+    justify-content: left; 
+    align-items: left; /
 }
